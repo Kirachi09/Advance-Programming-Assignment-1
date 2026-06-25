@@ -6,7 +6,7 @@
             <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs">
             <div  class="w-64 h-48">
                 <a href="#">
-                <img class="rounded-base" src="{{ asset('images/' . $blog->image) }}" alt="" />
+                <img class="rounded-base w-full h-full object-cover object-center" src="{{ asset('images/' . $blog->image) }}" alt="" />
             </a>
             </div>
             <a href="#">
