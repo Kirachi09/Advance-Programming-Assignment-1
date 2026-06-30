@@ -59,8 +59,45 @@ class BlogController extends Controller
         return view('blogs.show', compact('blog'));
     }
 
+    // /**
+    //  * Show the form for editing the specified resource.
+    //  */
+    // public function edit(Blog $blog)
+    // {
+    //     return view('blogs.edit', compact('blog'));
+    // }
+
+    // /**
+    //  * Update the specified resource in storage.
+    //  */
+    // public function update(Request $request, Blog $blog)
+    // {
+    //     $request->validate([
+    //         'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+    //         'title' => 'required',
+    //         'content' => 'required'
+    //     ]);
+
+    //     $imageName = $blog->image;
+
+    //     if ($request->hasFile('image')) {
+    //         $image = $request->file('image');
+    //         $imageName = time() . '.' . $image->getClientOriginalExtension();
+    //         $image->move(public_path('images'), $imageName);
+    //     }
+
+    //     $blog->image = $imageName;
+    //     $blog->title = $request->title;
+    //     $blog->content = $request->content;
+    //     $blog->save();
+
+    //     return redirect()->route('blogs.index');
+    // }
+
+
     /**
-     * Show the form for editing the specified resource.
+     * 
+     * 
      */
     public function edit(Blog $blog)
     {
