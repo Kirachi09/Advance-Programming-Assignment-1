@@ -129,6 +129,12 @@ class BlogController extends Controller
         return redirect()->route('blogs.index');
     }
 
+
+    // public function destroy(Blog $blog)
+    // {
+    //     $blog->delete();
+    //     return redirect()->route('blogs.index');
+    // }
     /**
      * Remove the specified resource from storage.
      */
