@@ -117,9 +117,11 @@ class BlogController extends Controller
             'content' => 'required',
         ]);
 
-        $image = $request->file('image');
-        $imageName = time() . '_' . $image->getClientOriginalExtension();
-        $image->move(public_path('images'), $imageName);
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $imageName = time() . '_' . $image->getClientOriginalExtension();
+            $image->move(public_path('images'), $imageName);
+        }
 
         $blog->image = $imageName;
         $blog->title = $request->title;

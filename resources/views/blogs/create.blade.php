@@ -14,8 +14,7 @@
 
             <div class="mb-4">
                 <label for="content" class="block text-sm font-medium text-gray-700">Content</label>
-                <textarea name="content" id="content" class="mt-1 block w-full"></textarea>
-
+                <textarea name="content" id="content" class="mt-1 block w-full h-40"></textarea>
             </div>
             
             <x-primary-button>Create Blog</x-primary-button>
